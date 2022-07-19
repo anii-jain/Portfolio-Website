@@ -1,0 +1,120 @@
+@import "../../global.scss";
+
+.intro {
+    // background-color: white;
+    background-color: whitesmoke;
+    background: linear-gradient(90deg, #d9e7ff 0%, #e3ffe7 100%);
+    display: flex;
+
+    .left {
+        flex: 0.5;
+        overflow: hidden;
+
+        .imgContainer{
+            margin-left: 7%;
+            margin-top: 1%;
+            // margin-bottom: 2%;
+            width: 650px;
+            height: 650px;
+            // background-color: crimson;
+            background: #373B44;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #5484d2, #848c9e);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #567fc2, #55af77);
+
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            // box-shadow: rgba(40, 139, 219, 0.17) 0px 54px 55px, rgba(45, 135, 232, 0.216) 0px -12px 30px, rgba(82, 152, 232, 0.247)0px 4px 6px,rgba(166, 240, 63, 0.22) 0px 12px 13px, rgba(226, 114, 92, 0.192) 0px -3px 5px;
+            
+        img{
+            height: 100%;
+            padding-left: 26%;
+        }
+        }
+    }
+    .right {
+        flex: 0.5;
+        
+        .wrapper{
+            width: 100%;
+            height: 100%;
+            padding-left: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1{
+                font-size: 60px;
+                margin: 10px 0px;
+            }
+            h2{
+                font-size: 35px;
+            }
+            h3{
+                font-size: 30px;
+                // margin: 10px 0px;
+                span {
+                    width: 0px;
+                    font-size: inherit;
+                    color: inherit;
+                }
+            }
+
+
+            a {
+                width: 25%;
+
+                overflow: hidden;
+                // height: 11.12%;
+                button {
+                width: 90%;
+                height: 45%;
+                margin: 20px 5px;
+                cursor: pointer;
+                font-size: 20px;
+                font-weight: bold;
+                color: black;
+                background: white;
+                border: 1px solid $mainColor;
+                box-shadow: 5px 5px 0 black,
+                    -5px -5px 0 $mainColor,
+                    -5px 5px 0 black,
+                    5px -5px 0 $mainColor;
+                transition: 500ms ease-in-out;
+            }
+            
+            button:hover {
+                box-shadow: 20px 5px 0 $mainColor, -20px -5px 0 black;
+            }
+            
+            button:focus {
+                outline: none;
+            }   
+        }        
+        
+        }
+
+        .change{
+            position: absolute;
+            bottom: 10px;
+            left: 70%;
+
+            img{
+                width: 45px;
+                animation: arrowBlink 2s infinite;
+            }
+            @keyframes arrowBlink {
+                50%{
+                    opacity: 1;
+                }
+                100%{
+                    opacity: 0;
+                }
+            } 
+        }
+    }
+}
+
+
+
