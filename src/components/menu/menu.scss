@@ -3,9 +3,10 @@
 .menu {
   width: 300px;
   height: 100vh;
-  // background-color: $mainColor;
+  background-color: #5bc4aa;
+  
   // background: linear-gradient(90deg, #000851 70%, #616690 100%);
-  background-image: linear-gradient(#000851, #1CB5E0);
+  // background-image: linear-gradient(#000851, #1CB5E0);
   position: fixed;
   top: 0;
   right: -300px;
@@ -26,7 +27,7 @@
     list-style: none;
     font-size: 30px;
     font-weight: 400;
-    color: white;
+    color: $mainColor;
     width: 72%;
 
     li {

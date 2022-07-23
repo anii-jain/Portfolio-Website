@@ -2,8 +2,9 @@
 
 .intro {
     // background-color: white;
-    background-color: whitesmoke;
-    background: linear-gradient(90deg, #d9e7ff 0%, #e3ffe7 100%);
+    background-color: #1e191a;
+    // background-color: #051622;
+    // background: linear-gradient(90deg, #d9e7ff 0%, #e3ffe7 100%);
     display: flex;
 
     .left {
@@ -47,9 +48,11 @@
             h1{
                 font-size: 60px;
                 margin: 10px 0px;
+                color: #de9e48;
             }
             h2{
                 font-size: 35px;
+                color: white;
             }
             h3{
                 font-size: 30px;
@@ -57,14 +60,14 @@
                 span {
                     width: 0px;
                     font-size: inherit;
-                    color: inherit;
+                    color: WHITE;
                 }
             }
 
 
             a {
                 width: 25%;
-
+                margin-top: 5px;
                 overflow: hidden;
                 // height: 11.12%;
                 button {
@@ -75,17 +78,17 @@
                 font-size: 20px;
                 font-weight: bold;
                 color: black;
-                background: white;
+                background: #de9e48;
                 border: 1px solid $mainColor;
-                box-shadow: 5px 5px 0 black,
-                    -5px -5px 0 $mainColor,
-                    -5px 5px 0 black,
-                    5px -5px 0 $mainColor;
+                box-shadow: 5px 5px 0 rgb(241, 228, 228),
+                    -5px -5px 0 rgb(234, 154, 166),
+                    -5px 5px 0 rgb(241, 228, 228),
+                    5px -5px 0 rgb(234, 154, 166);
                 transition: 500ms ease-in-out;
             }
             
             button:hover {
-                box-shadow: 20px 5px 0 $mainColor, -20px -5px 0 black;
+                box-shadow: 20px 5px 0 rgb(234, 154, 166), -20px -5px 0 rgb(198, 244, 223);
             }
             
             button:focus {
@@ -101,7 +104,8 @@
             left: 70%;
 
             img{
-                width: 45px;
+                // background-color: aqua;
+                width: 35px;
                 animation: arrowBlink 2s infinite;
             }
             @keyframes arrowBlink {

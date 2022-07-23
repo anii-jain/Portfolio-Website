@@ -266,8 +266,10 @@
 
 .portfolio {
 
-        background-color: whitesmoke;
-        background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+        // background-color: whitesmoke;
+        // background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+        background-color: #1e191a;
+        
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -289,9 +291,10 @@
                 align-items: center;
                 justify-content: flex-end;
                 .about{
+                    color: white;
                     height: 65%;
                     width: 95%;
-                    border: 1px solid black;
+                    border: 2px solid #de9e48;
                     text-align: center;
                     h2{
                         font-size: 35px;
@@ -308,7 +311,7 @@
                 margin: 0px 20px;
                 height: 91%;
                 width: 450px;
-                background-image: url(https://images.pexels.com/photos/5380590/pexels-photo-5380590.jpeg?auto=compress&cs=tinysrgb&w=600);
+                background-image: url(https://i.pinimg.com/564x/04/89/2a/04892a8f239022ba032c73fb355f3aaf.jpg);
             }
             .third{
                 margin: 0px 20px;
@@ -321,8 +324,19 @@
                 .tech{
                     height: 63%;
                     width: 95%;
-                    background-color: rgb(240, 214, 208);
-                    // border: 1px solid black;
+                    color: white;
+                    // background-color: #3e413a;
+// background: rgba(229, 189, 113, 0.21);
+// border-radius: 2px;
+// box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+// backdrop-filter: blur(6.6px);
+// -webkit-backdrop-filter: blur(6.6px);
+border: 1px solid #55342a;
+//                     // border: 1px solid black;
+background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
                     // text-align: center;
                     h2{
                         font-size: 30px;
@@ -361,7 +375,19 @@
                 .design{
                     height: 34%;
                     width: 95%;
-                    background-color: rgb(246, 199, 205);
+                    color: white;
+//                     background-color: rgb(246, 199, 205);
+//                     background: rgba(226, 179, 91, 0.21);
+// border-radius: 2px;
+// box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+// backdrop-filter: blur(6.6px);
+// -webkit-backdrop-filter: blur(6.6px);
+// border: 1px solid rgba(226, 179, 91, 0.43);
+border: 1px solid #55342a;
+background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
                     // text-align: center;
                     h2{
                         font-size: 30px;
@@ -415,7 +441,7 @@
                                 
                         
                                 img{
-                                    width: 45px;
+                                    width: 35px;
                                     transform: rotate(-180deg);
                                     animation: arrowBlink 2s infinite;
                                 }
@@ -435,7 +461,7 @@
                             
                             margin-right: 2%;
                             img{
-                                width: 45px;
+                                width: 35px;
                                 animation: arrowBlink 2s infinite;
                             }
                             @keyframes arrowBlink {
