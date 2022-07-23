@@ -37,6 +37,14 @@ export default function contact() {
           </div>
         </div>
       </div>
+      <div className="motion">
+         <a href="#nar" className="changeu">
+           <img src="assets/down.png" alt="" />
+         </a>
+         <a href="#intro" className="changed">
+           <img src="assets/down.png" alt="" />
+         </a>
+       </div>
     </div>
   )
 }
