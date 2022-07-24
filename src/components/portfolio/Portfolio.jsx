@@ -62,7 +62,8 @@ export default function Portfolio() {
       <div className="first">
         <div className="about">
           <h2>About Me</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut architecto impedit iure voluptas ullam doloribus assumenda explicabo earum, ipsam nostrum optio. Atque quae neque aliquid sit cupiditate ad, eligendi cumque reiciendis praesentium debitis. Nisi, consequuntur. Exercitationem, maxime eaque eius  doloremquet</p>
+          <p>Hey, I'm a Pre final Year undergrad pursuing Electronics and Communication
+            Engineering, currently focusing on Data Structures and Algorithms, Web Development and Computer Fundamentals. I'm making every effort to put all I've learned into practice. In addition to these technical abilities, I find Designing to be interesting.</p>
         </div>
       </div>
       <div className="second">

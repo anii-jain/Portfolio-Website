@@ -6,36 +6,39 @@ export default function Works() {
   const data = [
     {
       id: "1",
-      icon: "./assets/mobile.png",
-      title: "Web Design",
+      icon: "./assets/SV.png",
+      title: "Sorting visualizer",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+        "A online application called Sorting Visualizer allows users to see a variety of sorting algorithms, including Bubble Sort, Merge Sort, Quick Sort, and Heap Sort. ",
       img:
-        "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+        "./assets/visn.png",
+      code: "https://github.com/anii-jain",
     },
     {
       id: "2",
-      icon: "./assets/globe.png",
-      title: "Mobile Application",
+      icon: "./assets/tcfnn.png",
+      title: "Temperature Controlled Fan",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        " A device which automatically changes it's speed (speed of the fan) according to the surrounding temperature in real time.",
       img:
-        "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+        "./assets/fanfinal.png",
+      code: "https://github.com/anii-jain/Temperature-Controlled-Fan",
     },
-    {
-      id: "3",
-      icon: "./assets/writing.png",
-      title: "Branding",
-      desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img:
-        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
-    },
+    // {
+    //   id: "3",
+    //   icon: "Coming Soon",
+    //   title: "",
+    //   desc:
+    //     "",
+    //   img:
+    //     "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+    //   code: "",
+    // },
   ];
 
   const handleClick = (way) => {
     way === "left"
-      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
+      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 1)
       : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
   };
   
@@ -55,12 +58,12 @@ export default function Works() {
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
-                  <span>Projects</span>
+                  <span><a href={d.code} target="_blank">Click here for source code !!</a></span>
                 </div>
               </div>
               <div className="right">
                 <img
-                  src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930"
+                  src={d.img}
                   alt=""
                 />
               </div>
