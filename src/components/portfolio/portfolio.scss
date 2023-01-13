@@ -280,6 +280,9 @@
             justify-content: center;
             height: 89%;
             width: 98%;
+            @include mobile {
+                flex-direction: column;
+            }
             // border: 1px solid black;
             .first{
                 margin: 0px 20px;
