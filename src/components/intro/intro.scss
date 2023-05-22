@@ -1,45 +1,41 @@
 @import "../../global.scss";
 
 .intro {
-    // background-color: white;
     background-color: #1e191a;
-    // background-color: #051622;
-    // background: linear-gradient(90deg, #d9e7ff 0%, #e3ffe7 100%);
     display: flex;
-
-    @include mobile{
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 668px){
         flex-direction: column;
-        align-items: center;
     }
 
     .left {
         flex: 0.5;
         overflow: hidden;
-
         .imgContainer{
-            margin-left: 7%;
-            margin-top: 1%;
-            // margin-bottom: 2%;
-            width: 650px;
-            height: 650px;
-            // background-color: crimson;
-            background: #373B44;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #5484d2, #848c9e);  /* Chrome 10-25, Safari 5.1-6 */
+            margin-left: 7vw;
+            width: 37vw;
+            height: 37vw;
+            background: #373B44; 
+            background: -webkit-linear-gradient(to right, #5484d2, #848c9e); 
             background: linear-gradient(to right, #567fc2, #55af77);
 
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-items: center;
-            // box-shadow: rgba(40, 139, 219, 0.17) 0px 54px 55px, rgba(45, 135, 232, 0.216) 0px -12px 30px, rgba(82, 152, 232, 0.247)0px 4px 6px,rgba(166, 240, 63, 0.22) 0px 12px 13px, rgba(226, 114, 92, 0.192) 0px -3px 5px;
-            @include mobile {
-                align-items: flex-start;
+            @media screen and (max-width: 668px){
+                border-radius: 0;
+                margin: 0px;
+                width: 100vw;
+                height: 100vw;
             }
         img{
             height: 100%;
-            padding-left: 26%;
-            @include mobile {
-                height: 50%;
+            @media screen and (max-width: 668px){
+                // flex-direction: column;
+                width: 100%;
+                height: 100%;
             }
         }
         }
@@ -48,16 +44,21 @@
         flex: 0.5;
         
         .wrapper{
-            width: 100%;
-            height: 100%;
-            padding-left: 50px;
+            width: 98%;
+            height: 98%;
+            padding-left: 80px;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: flex-start;
 
-            @include mobile {
-                padding-left: 0;
-                align-items: center;
+            @media screen and (max-width: 668px){
+                // flex-direction: column;
+                
+                margin: 0;
+                margin-top: -20px;
+                margin-left: 20px;
+                padding: 0;
             }
 
             h1{
@@ -66,13 +67,23 @@
                 color: #de9e48;
 
                 @include mobile {
-                    
+                    font-size: 5.5vw;
+                }
+                @media screen and (max-width: 668px){
+                    font-size: 8vw;
                 }
 
             }
             h2{
                 font-size: 35px;
                 color: white;
+                @include mobile {
+                    font-size: 3vw;
+                }
+                @media screen and (max-width: 668px){
+                    font-size: 5vw;
+                }
+
             }
             h3{
                 font-size: 30px;
@@ -82,6 +93,13 @@
                     font-size: inherit;
                     color: WHITE;
                 }
+                @include mobile {
+                    font-size: 2.5vw;
+                }
+                @media screen and (max-width: 668px){
+                    font-size: 4.5vw;
+                }
+
             }
 
 
@@ -89,23 +107,22 @@
                 width: 25%;
                 margin-top: 5px;
                 overflow: hidden;
-                // height: 11.12%;
                 button {
-                width: 90%;
-                height: 45%;
-                margin: 20px 5px;
-                cursor: pointer;
-                font-size: 20px;
-                font-weight: bold;
-                color: black;
-                background: #de9e48;
-                border: 1px solid $mainColor;
-                box-shadow: 5px 5px 0 rgb(241, 228, 228),
-                    -5px -5px 0 rgb(234, 154, 166),
-                    -5px 5px 0 rgb(241, 228, 228),
-                    5px -5px 0 rgb(234, 154, 166);
-                transition: 500ms ease-in-out;
-            }
+                    width: 90%;
+                    height: 45%;
+                    margin: 20px 5px;
+                    cursor: pointer;
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: black;
+                    background: #de9e48;
+                    border: 1px solid $mainColor;
+                    box-shadow: 5px 5px 0 rgb(241, 228, 228),
+                        -5px -5px 0 rgb(234, 154, 166),
+                        -5px 5px 0 rgb(241, 228, 228),
+                        5px -5px 0 rgb(234, 154, 166);
+                    transition: 500ms ease-in-out;
+                }
             
             button:hover {
                 box-shadow: 20px 5px 0 rgb(234, 154, 166), -20px -5px 0 rgb(198, 244, 223);
@@ -114,6 +131,9 @@
             button:focus {
                 outline: none;
             }   
+            @media screen and (max-width: 668px){
+                display: none;
+            }
         }        
         
         }
@@ -121,8 +141,10 @@
         .change{
             position: absolute;
             bottom: 10px;
-            left: 70%;
-
+            left: 50%;
+            @media screen and (max-width: 668px){
+                bottom: 20px;
+            }
             img{
                 // background-color: aqua;
                 width: 35px;

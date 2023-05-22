@@ -1,19 +1,43 @@
 import "./contact.scss";
+import { useRef, useEffect } from "react"; 
+import emailjs from '@emailjs/browser';
 import {Place, Phone, Email} from "@material-ui/icons";
 
 export default function contact() {
+  const form = {useRef};
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    document.getElementById("myModal").style.display = "none";
+  }
+  const SendEmail = (e) => {
+    e.preventDefault();
+    
+    emailjs.sendForm('service_n9wf0ob', 'template_5c5q4yz', form.current, 'BXre-Btws8xI75jSN')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset();
+      document.getElementById("myModal").style.display = "block";
+  };
   return (
-    <div className="contact" id="contact">
-      <div className="wrap">
-        <div className="left">
-          <h2>SEND ME A <br/> MESSAGE .{/*🚀*/}</h2>
-          <form>
-            <input type="text" placeholder="Name*" required/>
-            <input type="text" placeholder="Email address*" required/>
-            <textarea placeholder="Message" />
+    <div className="contact" id="contact">   
+      <div id="myModal" className="modal">
+        <div className="modal-content">
+          <h3 className="textsuccess">MESSAGE SENT SUCCESSFULLY!</h3>
+        </div>
+      </div>
+      <div className="wrap" id="wrap">
+        <div className="left" id="left">
+          <h2>SEND ME A <br/> MESSAGE .</h2>
+          <form onSubmit={SendEmail} ref={form}>
+            <input autoComplete="off" name="user_name" type="text" placeholder="Name*" required/>
+            <input autoComplete="off" name="user_email" type="email" placeholder="Email address*" required/>
+            <textarea autoComplete="off" name="message" placeholder="Message" />
 
 
-            <section class="container">
+            <section className="container">
   <button data-hover="click me!"><div>Hover me!</div></button></section>
 
 

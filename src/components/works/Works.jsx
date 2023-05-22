@@ -6,13 +6,33 @@ export default function Works() {
   const data = [
     {
       id: "1",
-      icon: "./assets/SV.png",
-      title: "Sorting visualizer",
+      icon: "./assets/iconshow.png",
+      title: "ThinkPad",
       desc:
-        "A online application called Sorting Visualizer allows users to see a variety of sorting algorithms, including Bubble Sort, Merge Sort, Quick Sort, and Heap Sort. ",
+        "ThinkPad is a platform where you can store you Notes or other important details. This platform stores you notes and gives you an upperhand to access them from anywhere by loggin into your account. ",
       img:
         "./assets/visn.png",
-      code: "https://github.com/anii-jain",
+      code: "https://github.com/anii-jain/ThinkPad_frontend",
+    },
+    {
+      id: "3",
+      icon: "./assets/logo.png",
+      title: "Text Transform",
+      desc:
+        "A website consist of features which can transform text in different forms and gives a better overview. ",
+      img:
+        "./assets/visn.png",
+      code: "https://github.com/anii-jain/Text-Transform",
+    },
+    {
+      id: "4",
+      icon: "./assets/chat.png",
+      title: "Messaging App",
+      desc:
+        "A fully responsive website providing us feature to chat with other person on same portal with a selected username. I integrated Socket.IO with NodeJs to make it and still trying to make it more efficient by bringing new features to it. ",
+      img:
+        "./assets/visn.png",
+      code: "https://github.com/anii-jain/Messaging-App",
     },
     {
       id: "2",

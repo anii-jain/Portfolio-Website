@@ -3,6 +3,16 @@ import "./nar.scss"
 export default function Nar() {
   const data = [
     {
+      id: 4,
+      name: "TECHNICAL ASSISTANT",
+      title: "LNMIIT",
+      subt: "Data structures and Algorithms Lab",
+      img:
+        "assets/lnmiitLogo.png",
+      // icon: "assets/twitter.png",
+      desc:"Managing the work under the society and contributing towards the managment, at LNMIIT",
+    },
+    {
       id: 1,
       name: "CREATIVE TEAM LEAD",
       title: "ENTREPRENEURSHIP CELL",
@@ -38,16 +48,6 @@ export default function Nar() {
       // icon: "assets/linkedin.png",
       desc:
         "Organized and managed intra-college coding competitions and events, at LNMIIT",
-    },
-    {
-      id: 4,
-      name: "MEMBER",
-      title: "ACM LNMIIT",
-      subt: "Association for Computing Machinery",
-      img:
-        "assets/acmLogo.png",
-      // icon: "assets/twitter.png",
-      desc:"Managing the work under the society and contributing towards the managment, at LNMIIT",
     }
   ];
   return (
