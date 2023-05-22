@@ -1,6 +1,6 @@
 import "./portfolio.scss"
-import { useState } from "react";
-import PortfolioList from "../portfolioList/PortfolioList";
+// import { useState } from "react";
+// import PortfolioList from "../portfolioList/PortfolioList";
 
 
 

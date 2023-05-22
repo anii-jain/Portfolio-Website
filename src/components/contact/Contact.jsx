@@ -1,5 +1,5 @@
 import "./contact.scss";
-import { useRef, useEffect } from "react"; 
+import { useRef } from "react"; 
 import emailjs from '@emailjs/browser';
 import {Place, Phone, Email} from "@material-ui/icons";
 
@@ -31,7 +31,7 @@ export default function contact() {
       <div className="wrap" id="wrap">
         <div className="left" id="left">
           <h2>SEND ME A <br/> MESSAGE .</h2>
-          <form onSubmit={SendEmail} ref={form}>
+          <form onSubmit={SendEmail}>
             <input autoComplete="off" name="user_name" type="text" placeholder="Name*" required/>
             <input autoComplete="off" name="user_email" type="email" placeholder="Email address*" required/>
             <textarea autoComplete="off" name="message" placeholder="Message" />

@@ -15,7 +15,7 @@ export default function Works() {
       code: "https://github.com/anii-jain/ThinkPad_frontend",
     },
     {
-      id: "3",
+      id: "2",
       icon: "./assets/logo.png",
       title: "Text Transform",
       desc:
@@ -25,7 +25,7 @@ export default function Works() {
       code: "https://github.com/anii-jain/Text-Transform",
     },
     {
-      id: "4",
+      id: "3",
       icon: "./assets/chat.png",
       title: "Messaging App",
       desc:
@@ -35,7 +35,7 @@ export default function Works() {
       code: "https://github.com/anii-jain/Messaging-App",
     },
     {
-      id: "2",
+      id: "4",
       icon: "./assets/tcfnn.png",
       title: "Temperature Controlled Fan",
       desc:
@@ -43,17 +43,7 @@ export default function Works() {
       img:
         "./assets/fanfinal.png",
       code: "https://github.com/anii-jain/Temperature-Controlled-Fan",
-    },
-    // {
-    //   id: "3",
-    //   icon: "Coming Soon",
-    //   title: "",
-    //   desc:
-    //     "",
-    //   img:
-    //     "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
-    //   code: "",
-    // },
+    }
   ];
 
   const handleClick = (way) => {
@@ -69,7 +59,7 @@ export default function Works() {
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
         {data.map((d) => (
-          <div className="container">
+          <div className="container" key={d.id} /* unique id */>
             <div className="item">
               <div className="left">
                 <div className="leftContainer">
@@ -78,7 +68,9 @@ export default function Works() {
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
-                  <span><a href={d.code} target="_blank">Click here for source code !!</a></span>
+                  <span><a href={d.code} target="_blank" rel="noreferrer"
+                  /* Tag rel with "noopener" and "noreferrer" combined means that no referrer information should be passed to the website being linked to because of noreferrer tag and also prevents the newly opened page from controlling the page that delivered the traffic. */
+                  >Click here for source code !!</a></span>
                 </div>
               </div>
               <div className="right">

@@ -55,7 +55,7 @@ export default function Nar() {
       <h1>Non Academic Responsibilities</h1>
       <div className="container">
         {data.map((d) => (
-          <div className={d.featured ? "card featured" : "card"}>
+          <div className={d.featured ? "card featured" : "card"} key={d.id} /* unique ID */ >
             <div className="top">
               <img
                 className="user"
